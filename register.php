@@ -3,6 +3,8 @@
 
     $ctrl_auth = new Auth();
 
+    $ctrl_auth->hasSession();
+
     if(isset($_POST['register'])) {
         $data['nama']       = $_POST['nama'];
         $data['email']      = $_POST['email'];
