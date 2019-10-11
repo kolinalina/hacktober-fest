@@ -1,4 +1,10 @@
+<?php
+    session_start();
+    require "models/auth.php";
+    $ctrl_auth = new Auth();
 
+    $ctrl_auth->checkSession();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,14 +32,14 @@
                 <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link" data-toggle="dropdown" href="#">
-                            <i class="far fa-bell"></i>
+                            <i class="fas fa-ellipsis-v"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
                             <a href="javascript:void(0)" class="dropdown-item">
-                                <i class="fas fa-envelope mr-2"></i> Profile
+                                <i class="fas fa-user mr-2"></i> Profile
                             </a>
-                            <a href="#" class="dropdown-item">
-                                <i class="fas fa-users mr-2"></i> Logout
+                            <a href="logout.php" class="dropdown-item">
+                                <i class="fas fa-sign-out-alt mr-2"></i> Sign out
                             </a>
                         </div>
                     </li>
@@ -46,12 +52,20 @@
                 <div class="container">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark"><small>Hallo</small> Nama</h1>
+                            <h1 class="m-0 text-dark"><small>Hallo</small><b> <?=$_SESSION['nama']?></b></h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <footer class="main-footer">
+            <!-- To the right -->
+            <div class="float-right d-none d-sm-inline">
+               
+            </div>
+            <!-- Default to the left -->
+            <strong>Copyright &copy; 2019 <a href="javascript:void(0)">PCC</a>.</strong> All rights reserved.
+        </footer>
     </div>
 <!-- ./wrapper -->
 
