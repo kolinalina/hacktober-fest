@@ -53,6 +53,9 @@
                     <div class="row mb-2">
                         <div class="col-sm-6">
                             <h1 class="m-0 text-dark"><small>Hallo</small><b> <?=$_SESSION['nama']?></b></h1>
+                            <h2> Ini Adalah Halaman Dashboard </h2>
+                            <hr>
+                            <p>Selamat Datang</p>
                         </div>
                     </div>
                 </div>
@@ -70,7 +73,7 @@
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
-
+<!-- Komentar -->
 <!-- jQuery -->
 <script src="assets/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->

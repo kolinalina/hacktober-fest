@@ -71,7 +71,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Komentar -->
     <!-- jQuery -->
     <script src="assets/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
