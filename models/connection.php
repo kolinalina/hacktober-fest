@@ -32,7 +32,7 @@
             return $row;
         }
 
-	    function num_rows($request){
+	function num_rows($request){
             return mysqli_num_rows($this->query($request));
         }
     }
