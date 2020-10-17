@@ -74,7 +74,7 @@
                     </div>
                 </form>
                 <p class="mb-0">
-                    <a href="index.php" class="text-center">I already have a membership</a>
+                    <a href="index.php" class="text-center">I already have a membership of this </a>
                 </p>
             </div>
         </div>
